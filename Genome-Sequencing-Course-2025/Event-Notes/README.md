@@ -12,8 +12,8 @@ This folder contains **personal study notes and skill tracking** from the **Inte
 | ----- | ------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | Day 1 | Event-Notes-Day1.md | Overview of SequAna facility, genome sequencing workflow, Nanopore sequencing, library prep, QC             | [Day 1](./Event-Notes-Day1.md) |
 | Day 2 | Event-Notes-Day2.md | Genome metadata, GoaT, CLI skills, reproducible software management, assembly concepts                      | [Day 2](./Event-Notes-Day2.md) |
-| Day 3 | Event-Notes-Day3.md | Genome annotation frameworks, repeat annotation, gene prediction, functional annotation                     | [Day 3](./Event-Notes-Day3.md) |
-| Day 4 | Event-Notes-Day4.md | Workflow management with Nextflow, nf-core pipelines, ONT read preprocessing, de novo assembly, QC          | [Day 4](./Event-Notes-Day4.md) |
+| Day 3 | Event-Notes-Day3.md |Workflow management with Nextflow, nf-core pipelines, ONT read preprocessing, de novo assembly, QC          | [Day 3](./Event-Notes-Day3.md) |
+| Day 4 | Event-Notes-Day4.md | Genome annotation frameworks, repeat annotation, gene prediction, functional annotation          | [Day 4](./Event-Notes-Day4.md) |
 | Day 5 | Event-Notes-Day5.md | Gene-centric QC, BUSCO, functional enrichment, comparative genomics, orthology, evolutionary interpretation | [Day 5](./Event-Notes-Day5.md) |
 
 ---
