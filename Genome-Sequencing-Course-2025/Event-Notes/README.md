@@ -26,10 +26,10 @@ This folder contains **personal study notes and skill tracking** from the **Inte
 * Genome metadata querying and management using GoaT
 * CLI proficiency, software installation, and environment management (Conda, Mamba, Docker)
 * Genome assembly concepts: greedy, OLC, de Bruijn graph approaches
-* Eukaryotic genome annotation: repeat annotation, gene prediction, functional annotation
-* Functional annotation quality assessment (BUSCO, OMArk)
 * Workflow management: Nextflow, nf-core pipelines, HPC and cloud deployment
 * ONT read preprocessing, k-mer profiling, de novo assembly, contamination detection, organelle genome assembly
+* Eukaryotic genome annotation: repeat annotation, gene prediction, functional annotation
+* Functional annotation quality assessment (BUSCO, OMArk)
 * Functional enrichment analysis (GOATOOLS, topGO, REVIGO)
 * Comparative genomics: orthology inference, orthogroups (OMA, OrthoFinder, FastOMA), evolutionary interpretation
 * Integration of wet-lab and computational genomics workflows for production-grade genome analysis
