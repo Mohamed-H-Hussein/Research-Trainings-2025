@@ -60,5 +60,5 @@ These notes reflect my **personal understanding and learning progression**, focu
 ## Personal Learning Outcome
 
 This training strengthened my ability to reason about **how workflows behave**, not just how they are written.
-I can now confidently design **scalable, reproducible, and production-ready pipelines** that separate scientific logic from execution details, following best practices used in modern computational genomics and data science.
+I can now confidently design **scalable, reproducible, and production-ready pipelines** that separate scientific logic from execution details, following best practices used in modern Transcriptomic and data science.
 
