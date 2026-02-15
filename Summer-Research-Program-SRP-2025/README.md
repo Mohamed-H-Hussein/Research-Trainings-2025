@@ -207,7 +207,6 @@ This folder serves as a **personal learning and skill-tracking resource**, docum
 
 All materials authored by me are available for **educational and non-commercial use**, with proper citation. **program-provided materials remain under copyright of the original organizers.**
 
-**Citation:**
 
 
 ---
