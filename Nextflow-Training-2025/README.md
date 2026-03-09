@@ -158,7 +158,7 @@ As an MSc candidate in **Biochemistry & Molecular Biology**, with focused intere
 This folder contains training notes and summaries and is part of the **Research-Trainings-2025** repository.
 
 **Citation:**
-Hussein, Mohamed H. (2025). *Research-Trainings-2025 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
+Hussein, Mohamed H. (2026). *Research-Trainings-2025 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
 
 **Usage:**
 This folder serves as a **personal learning and skill-tracking resource** for:
@@ -179,7 +179,7 @@ All materials authored by me are available for **educational and non-commercial 
 This folder is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
 Full license: [https://creativecommons.org/licenses/by-nc/4.0/legalcode](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
-© 2025 Mohamed H. Hussein
+© 2026 Mohamed H. Hussein
 
 
 ---
