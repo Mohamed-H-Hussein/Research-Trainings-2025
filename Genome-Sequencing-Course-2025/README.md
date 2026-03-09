@@ -118,7 +118,7 @@ This training **strengthened my ability to integrate experimental and computatio
 This folder contains session notes and summaries and is part of the **Research-Trainings-2025** repository.
 
 **Citation:**
-Hussein, Mohamed H. (2025). *Research-Trainings-2025 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
+Hussein, Mohamed H. (2026). *Research-Trainings-2025 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
 
 **Usage:**
 This folder serves as a **personal learning and skill-tracking resource** for:
