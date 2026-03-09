@@ -139,7 +139,7 @@ All materials authored by me are available for **educational and non-commercial 
 This folder is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
 Full license: [https://creativecommons.org/licenses/by-nc/4.0/legalcode](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
-© 2025 Mohamed H. Hussein
+© 2026 Mohamed H. Hussein
 
 ---
 
