@@ -1,4 +1,3 @@
-
 # 🧬 Nextflow Workflow for Plant Whole-Genome Sequencing and Variant Calling
 
 🔍 **Dataset: [PRJEB62038](https://www.ebi.ac.uk/ena/browser/view/PRJEB62038)**  
