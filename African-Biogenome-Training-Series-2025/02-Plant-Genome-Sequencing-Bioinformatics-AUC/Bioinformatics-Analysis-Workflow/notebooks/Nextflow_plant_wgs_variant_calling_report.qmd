@@ -1,0 +1,547 @@
+---
+title: "Nextflow Workflow for Plant Whole-Genome Sequencing and Variant Calling"
+author: "Mohamed Hussein"
+date: "03-03-2026"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    mainfont: "Times New Roman"
+    fontsize: 12pt
+execute:
+  eval: false
+---
+
+```         
+ 
+```
+
+------------------------------------------------------------------------
+
+# Tools Used in This Study
+
+The following bioinformatics tools were used to build the variant calling workflow.
+
+| Tool | Function |
+|---------------------|---------------------------------------------------|
+| Nextflow | Workflow management system used to orchestrate the pipeline |
+| Conda | Environment manager for installing bioinformatics software |
+| BWA | Align sequencing reads to the reference genome |
+| Samtools | Manipulate and process SAM/BAM alignment files |
+| FastQC | Assess sequencing read quality |
+| fastp | Perform read trimming and quality filtering |
+| Picard | Detect and remove PCR duplicates |
+| BCFtools | Variant calling and variant filtering |
+| Ensembl Plants VEP | Functional annotation of genomic variants |
+
+These tools were integrated into a reproducible analysis workflow.
+
+------------------------------------------------------------------------
+
+# Environment Setup
+
+Before running the workflow, the required software tools were installed.
+
+## Install Conda
+
+``` bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+Activate Conda:
+
+``` bash
+source ~/.bashrc
+```
+
+------------------------------------------------------------------------
+
+## Install Nextflow
+
+``` bash
+curl -s https://get.nextflow.io | bash
+mv nextflow ~/bin/
+```
+
+Check installation:
+
+``` bash
+nextflow -version
+```
+
+------------------------------------------------------------------------
+
+## Install Bioinformatics Tools
+
+The required tools were installed using Conda.
+
+``` bash
+conda create -n variant_pipeline \
+bwa samtools bcftools fastqc fastp picard \
+-c bioconda -c conda-forge
+```
+
+Activate environment:
+
+``` bash
+conda activate variant_pipeline
+```
+
+All tools were successfully installed and ready to run the workflow.
+
+------------------------------------------------------------------------
+
+# Workflow Execution
+
+The pipeline was executed using the Nextflow workflow script.
+
+``` bash
+nextflow run main.nf -resume
+```
+
+Nextflow automatically executed each process sequentially:
+
+-   reference download
+-   genome indexing
+-   sequencing read preprocessing
+-   alignment
+-   duplicate removal
+-   variant calling
+
+------------------------------------------------------------------------
+
+# Project Structure
+
+To ensure reproducibility and proper workflow execution, the project follows a structured directory layout.
+
+``` markdown
+Bioinformatics-Analysis-Workflow/
+│
+├── envs/
+│   └── plant_wgs_env.yml
+│
+├── notebooks/
+│   └── Nextflow_plant_wgs_variant_calling_report.qmd
+│
+├── reports/
+│   └── Nextflow_plant_wgs_variant_calling_report.pdf
+│
+├── figures/
+│   └── vep_results.png
+│
+├── main.nf
+├── nextflow.config
+│
+└── scripts/
+```
+
+## Directory Description
+
+### envs/
+
+Contains Conda environment configuration files required to run the workflow.
+
+Example:
+
+```         
+plant_wgs_env.yml
+```
+
+This file ensures reproducibility of software dependencies.
+
+------------------------------------------------------------------------
+
+### notebooks/
+
+Contains analysis notebooks and Quarto report source files.
+
+```         
+Nextflow_plant_wgs_variant_calling_report.qmd
+```
+
+This file generates the final PDF report.
+
+------------------------------------------------------------------------
+
+### reports/
+
+Contains compiled reports generated from the notebooks.
+
+```         
+Nextflow_plant_wgs_variant_calling_report.pdf
+```
+
+------------------------------------------------------------------------
+
+### figures/
+
+Stores images used in the report.
+
+Example:
+
+```         
+vep_results.png
+```
+
+------------------------------------------------------------------------
+
+### main.nf
+
+Main **Nextflow workflow script** defining pipeline processes such as:
+
+-   reference download
+-   indexing
+-   read preprocessing
+-   alignment
+-   variant calling
+
+------------------------------------------------------------------------
+
+### nextflow.config
+
+Defines workflow configuration including:
+
+-   execution parameters
+-   computing resources
+-   environment settings
+
+------------------------------------------------------------------------
+
+### scripts/
+
+Optional directory containing helper scripts used by pipeline processes.
+
+------------------------------------------------------------------------
+
+# Introduction
+
+Whole-genome sequencing (WGS) enables comprehensive detection of genomic variants across an organism's genome.
+
+In this analysis, we implemented a **reproducible Nextflow workflow** to process plant sequencing data and identify genomic variants.
+
+The workflow includes:
+
+1.  Reference genome acquisition
+2.  Genome indexing
+3.  Sequencing read download
+4.  Quality control and trimming
+5.  Read alignment
+6.  Duplicate removal
+7.  Variant calling
+8.  Variant filtering and SNP extraction
+9.  Functional annotation using Ensembl Plants VEP
+
+The reference genome used in this study is **Arabidopsis thaliana TAIR10**.
+
+------------------------------------------------------------------------
+
+# Workflow Overview
+
+The workflow was implemented using **Nextflow** to ensure reproducibility and portability across computing environments.
+
+``` bash
+nextflow run main.nf -c nextflow.config -resume
+```
+
+The workflow consists of seven processes:
+
+-   download_reference
+-   index_reference
+-   download_reads
+-   qc_trimming
+-   alignment
+-   deduplication
+-   variant_calling
+
+------------------------------------------------------------------------
+
+# Reference Genome Download
+
+## Objective
+
+Download the **Arabidopsis thaliana reference genome and annotation** from NCBI.
+
+## Code
+
+``` bash
+datasets download genome accession GCF_000001735.4 --include genome,gff3
+unzip ncbi_dataset.zip
+```
+
+## Results
+
+Reference genome files were downloaded successfully.
+
+```         
+GCF_000001735.4_TAIR10.1_genomic.fna
+genomic.gff
+```
+
+These files provide the **reference sequence and genome annotations** required for downstream alignment and variant interpretation.
+
+------------------------------------------------------------------------
+
+# Reference Genome Indexing
+
+## Objective
+
+Prepare the genome for efficient read alignment using BWA and Samtools.
+
+## Code
+
+``` bash
+bwa index GCF_000001735.4_TAIR10.1_genomic.fna samtools faidx GCF_000001735.4_TAIR10.1_genomic.fna
+```
+
+## Results
+
+The indexing process generated several files:
+
+```         
+.fna.amb 
+.fna.ann 
+.fna.bwt 
+.fna.pac 
+.fna.sa 
+.fna.fai
+```
+
+These files enable **fast alignment of sequencing reads** to the reference genome.
+
+------------------------------------------------------------------------
+
+# Sequencing Read Download
+
+## Objective
+
+Download sequencing reads from the Sequence Read Archive (SRA).
+
+## Code
+
+``` bash
+prefetch ERR11436045
+fasterq-dump ERR11436045 --split-files
+```
+
+## Results
+
+Paired-end FASTQ files were generated:
+
+```         
+ERR11436045_1.fastq
+ERR11436045_2.fastq
+```
+
+These files contain the raw sequencing reads used for genome alignment.
+
+------------------------------------------------------------------------
+
+# Quality Control and Read Trimming
+
+## Objective
+
+Assess sequencing quality and remove low-quality bases.
+
+## Code
+
+``` bash
+fastqc ERR11436045_1.fastq ERR11436045_2.fastq
+
+fastp \
+-i ERR11436045_1.fastq \
+-I ERR11436045_2.fastq \
+-o ERR11436045_1.trimmed.fastq \
+-O ERR11436045_2.trimmed.fastq \
+-l 100
+```
+
+## Results
+
+Quality reports generated:
+
+```         
+fastp.html
+fastp.json
+fastqc_output/
+```
+
+Trimmed reads:
+
+```         
+ERR11436045_1.trimmed.fastq
+ERR11436045_2.trimmed.fastq
+```
+
+------------------------------------------------------------------------
+
+# Read Alignment
+
+## Objective
+
+Align reads to the reference genome.
+
+## Code
+
+``` bash
+bwa mem index/GCF_000001735.4_TAIR10.1_genomic.fna \
+ERR11436045_1.trimmed.fastq \
+ERR11436045_2.trimmed.fastq \
+> aligned.sam
+```
+
+Convert SAM to BAM and sort:
+
+``` bash
+samtools view -bS aligned.sam > aligned.bam
+samtools sort aligned.bam -o sorted.bam
+samtools index sorted.bam
+```
+
+## Results
+
+Example alignment statistics:
+
+```         
+Processed 531560 reads
+mean insert size ≈ 330 bp
+median insert size ≈ 355 bp
+```
+
+Generated files:
+
+```         
+ERR11436045_sorted_trimmed_ref_aligned.bam
+ERR11436045_sorted_trimmed_ref_aligned.bam.bai
+```
+
+------------------------------------------------------------------------
+
+# Duplicate Removal
+
+## Objective
+
+Remove PCR duplicates.
+
+## Code
+
+``` bash
+picard MarkDuplicates \
+I=ERR11436045_sorted_trimmed_ref_aligned.bam \
+O=ERR11436045_dedup.bam \
+M=dup_metrics.txt
+```
+
+## Results
+
+Output:
+
+```         
+ERR11436045_dedup.bam
+dup_metrics.txt
+```
+
+------------------------------------------------------------------------
+
+# Variant Calling
+
+## Objective
+
+Detect genomic variants using bcftools.
+
+## Code
+
+``` bash
+bcftools mpileup \
+-f GCF_000001735.4_TAIR10.1_genomic.fna \
+ERR11436045_dedup.bam \
+-Ou | bcftools call -mv -Oz -o variants.vcf.gz
+```
+
+------------------------------------------------------------------------
+
+# Variant Filtering
+
+``` bash
+bcftools filter -i 'QUAL>30' variants.vcf.gz \
+-Oz -o filtered_variants.vcf.gz
+```
+
+Extract SNPs:
+
+``` bash
+bcftools view -v snps filtered_variants.vcf.gz \
+-Oz -o snps.vcf.gz
+```
+
+------------------------------------------------------------------------
+
+# Functional Annotation
+
+Variant annotation was performed using **Ensembl Plants VEP**.
+
+Annotation summary:
+
+```         
+Variants processed: 1,048,016
+Novel variants: 17.9%
+Known variants: 82.1%
+Genes affected: 32,449
+Regulatory regions: 53,563
+```
+
+Variant consequences:
+
+```         
+upstream_gene_variant ~40%
+downstream_gene_variant ~30%
+intron_variant ~6%
+intergenic_variant ~4%
+missense_variant ~3%
+synonymous_variant ~3%
+```
+
+------------------------------------------------------------------------
+
+# Variant Annotation Results Visualization
+
+![Variant annotation results](vep_results.png)
+
+**Figure 1:** Distribution of variant consequences detected in the dataset based on Ensembl Plants VEP annotation.\
+The figure summarizes the proportions of upstream, downstream, intronic, intergenic, missense, and synonymous variants (Functional Annotation section).
+
+------------------------------------------------------------------------
+
+# Conclusion
+
+This study implemented a **reproducible workflow for plant WGS variant analysis**.
+
+Key outcomes:
+
+-   Successful alignment of sequencing reads
+-   Detection of over **1 million genomic variants**
+-   Functional annotation using Ensembl Plants VEP
+
+------------------------------------------------------------------------
+
+# Reproducibility
+
+Workflow manager:
+
+```         
+Nextflow
+```
+
+Environment manager:
+
+```         
+Conda
+```
+
+Key tools:
+
+```         
+BWA Samtools BCFtools FastQC fastp Picard
+```
+
+-   This workflow provides a fully reproducible and modular pipeline for plant whole-genome sequencing variant analysis, enabling consistent results and facilitating future genomic studies.
