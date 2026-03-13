@@ -1,1 +1,14 @@
-
+name: plant_wgs_env
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - bwa
+  - samtools
+  - bcftools
+  - fastqc
+  - fastp
+  - sra-tools
+  - ncbi-datasets-cli
+  - picard
