@@ -106,12 +106,14 @@ African-Biogenome-Training-Series-2025
 ├── 01-Biodiversity-Genomics-One-Health-MohammedV-Rabat/
 │   ├── README.md                # Workshop description, lecture topics, and conceptual learning summary
 │   └── Training-Notes/
+│       ├── README.md            # Summary of daily learning sessions
 │       ├── Training-Note-Day-1.md   # biodiversity genomics, One Health frameworks, AfricaBP mission
 │       └── Training-Note-Day-2.md   # genomics technologies, ethics, and governance
 │
 ├── 02-Plant-Genome-Sequencing-Bioinformatics-AUC/
 │   ├── README.md                # Hands-on workshop overview covering wet-lab genomics and bioinformatics training
 │   ├── Training-Notes/
+│   │   ├── README.md            # Summary of daily learning sessions
 │   │   ├── Training-Note-Day-1.md   # Wet-lab: plant DNA extraction, QC methods, and AfricaBP program overview
 │   │   ├── Training-Note-Day-2.md   # Wet-lab: Illumina library preparation, indexing, and sequencing principles
 │   │   ├── Training-Note-Day-3.md   # Wet-lab: Sequencing workflow: MiSeq run setup, QC metrics, troubleshooting
@@ -164,6 +166,7 @@ African-Biogenome-Training-Series-2025
         └── figures/
             ├── Pie_chart_visualization_for_overall_abundance_Winter.png   # Seasonal microbial abundance (winter samples)
             └── Pie_chart_visualization_for_each_sample_Summer.png         # Sample-level microbial abundance (summer dataset)
+
 ```
 
 ---
