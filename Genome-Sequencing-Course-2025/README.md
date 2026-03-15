@@ -14,10 +14,10 @@ This folder contains my personal study notes and summaries from the **Intensive 
 
 * **Institution:** University of Konstanz, SequAna Unit
 * **Course Code:** BIO-16840
-* **Dates:** March 20–24, 2025
-* **Coordinator:** Dr. Abdoallah Sharaf
-* **Format:** Intensive Hands-on Genomics Training (Wet-Lab + Computational)
-* **Location:** University of Konstanz, Germany
+* **Dates:** March 20–24, 2025.
+* **Coordinator:** Dr. Abdoallah Sharaf.
+* **Format:** Intensive Hands-on Genomics Training (Wet-Lab + Computational).
+* **Location:** University of Konstanz, Germany. 
 * **LinkedIn Announcement:** [View Post](https://www.linkedin.com/posts/abdoallah-sharaf-4a52614a_genomics-practicalcourse-bio16840-activity-7282109889127100416-UdMx?utm_source=share&utm_medium=member_android&rcm=ACoAAEZM7BUBeTmUfpDjxkHdJeuFcerI0Gz5Tt8)
 * **Course Details (University Page):** [Course Info](https://zeus.uni-konstanz.de/hioserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=108491&periodId=793)
 
@@ -145,7 +145,7 @@ Full license: [https://creativecommons.org/licenses/by-nc/4.0/legalcode](https:/
 
 ## 🛡️ Legal Notice
 
-This folder contains **my personal study notes and summaries** created during the **Intensive Practical Genome Sequencing Course (BIO-16840, 2025)** led by **Dr. Abdoallah Sharaf and the SequAna Unit, University of Konstanz**.
+This folder contains **my personal study notes and summaries** created during the **Intensive Practical Genome Sequencing Course (BIO-16840, 2025)** led by **Dr. Abdoallah Sharaf and the SequAna Unit, University of Konstanz, Germany**.
 
 **Important Legal Disclaimer:**
 
@@ -157,7 +157,7 @@ This folder contains **my personal study notes and summaries** created during th
 
 4. The purpose of this folder is **solely for personal learning, professional development, and scientific documentation**, serving as a **personal reference for ongoing and future research**. These notes are **intended only as a reflection of my understanding** and **under no circumstances do they replace, reproduce, or serve as the actual course materials**.
 
-5. **Unauthorized copying, distribution, or commercial use of the original course materials is strictly prohibited**. Any use, reproduction, or redistribution of the original teaching materials must be approved in writing by Dr. Abdoallah Sharaf (**[abdoallah.sharaf@uni-konstanz.de](mailto:abdoallah.sharaf@uni-konstanz.de)**).
+5. **Unauthorized copying, distribution, or commercial use of the original course materials is strictly prohibited**. Any use, reproduction, or redistribution of the original teaching materials must be approved in writing by Dr. Abdoallah Sharaf.
 
 6. **Note:** These notes are intended solely for **personal educational purposes**. I am **not responsible for any use or interpretation of these notes by others**, and they should not be considered as official guidance or instruction from Dr. Abdoallah Sharaf or the University of Konstanz. **No slides, videos, assessments, or any original course files are included here.**
 
