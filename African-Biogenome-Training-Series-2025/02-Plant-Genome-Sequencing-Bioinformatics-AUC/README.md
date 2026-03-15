@@ -13,12 +13,15 @@ These notes reflect both **wet-lab and bioinformatics skills**, with detailed co
 
 ## 🏫 Event Information
 
-* **Workshop:** African BioGenome Project — Exploring Genomic Diversity - Hands-on Workshop in Plant Genome Sequencing and Bioinformatics
+* **Workshop:** Exploring Genomic Diversity - Hands-on Workshop in Plant Genome Sequencing and Bioinformatics
 * **Organization:** African BioGenome Project (AfricaBP) — Open Institute for Genomics & Bioinformatics
 * **Host Institution:** The American University in Cairo (AUC)
 * **Location:** Cairo, Egypt (Hands-on participation)
-* **Dates:** 19–23 October 2025
+* **Dates:** 19–23 October 2025, 09:00 – 18:00 (GMT +2)
 * **Format:** Practical Workshop (Wet Lab + Dry Lab)
+* **Coordinators:**
+  * Prof. Ahmed Moustafa
+  * Dr. Mai Ibrahim Barakat
 * **Event Official Link:** [Linkedin Event Link](https://www.linkedin.com/posts/african-biogenome-project_to-register-please-visit-httpslnkdin-activity-7350486207463661568-pWeh?)
 
 ---
@@ -180,3 +183,7 @@ Full license: [https://creativecommons.org/licenses/by-nc/4.0/legalcode](https:/
 ---
 
 © 2026 Mohamed H. Hussein — All workflows, scripts, and notes are provided “as-is” without warranty.
+
+
+
+
