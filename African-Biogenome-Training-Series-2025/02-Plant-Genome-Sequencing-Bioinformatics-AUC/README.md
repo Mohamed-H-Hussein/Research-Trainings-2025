@@ -58,6 +58,7 @@ Overall, this repository serves as both:
 │
 ├── README.md
 ├── Training-Notes/
+│   ├── README.md
 │   ├── Training-Note-Day-1.md
 │   ├── Training-Note-Day-2.md
 │   ├── Training-Note-Day-3.md
