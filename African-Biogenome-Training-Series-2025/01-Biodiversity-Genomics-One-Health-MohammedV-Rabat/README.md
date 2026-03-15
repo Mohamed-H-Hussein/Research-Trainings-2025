@@ -47,6 +47,7 @@ Through expert lectures and scientific discussions, participants explored how ge
 │
 ├── README.md
 └── Training-Notes/
+    ├── README.md
     ├── Training-Note-Day-1.md
     └── Training-Note-Day-2.md
 ```
