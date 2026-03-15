@@ -43,7 +43,7 @@ Through expert lectures and scientific discussions, participants explored how ge
 ## 📂 Folder Structure
 
 ```
-African-Biogenome-Training-Series-2025/
+01-Biodiversity-Genomics-One-Health-MohammedV-Rabat/
 │
 ├── README.md
 └── Training-Notes/
