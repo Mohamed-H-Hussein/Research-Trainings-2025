@@ -1,6 +1,6 @@
 # 💻 Research Trainings 2025 Repository
 
-This repository **contains my personal notes, analysis reports, project materials, and summaries** from multiple research and training events in 2025. It highlights **hands-on experience in genomics, bioinformatics, multi-omics analysis, and computational biology**, developed alongside my M.Sc. in Biochemistry and Molecular Biology.
+This repository **contains my personal notes, analysis reports, project materials, and summaries** from multiple research and training events in 2025. It highlights **hands-on experience in genomics, bioinformatics pipelines, Nextflow workflows, and computational biology exercises**, developed alongside my M.Sc. in Biochemistry and Molecular Biology.
 
 ---
 
@@ -220,7 +220,7 @@ This folder documents hands-on experience in cancer bioinformatics, scRNA-seq an
 
 These trainings were selected to:
 
-* Gain **hands-on experience** in genomics, bioinformatics, multi-omics, and workflow management.
+* Gain **hands-on experience** in genomics, bioinformatics, single-cell transcriptomics (scRNA-seq), and workflow management.
 * Apply **computational and wet-lab techniques** to real biological and biomedical datasets.
 * Develop **data analysis, visualization, and reproducibility skills**.
 * Build a strong foundation for **future research projects in molecular cancer biology and bioinformatics**.
