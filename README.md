@@ -22,6 +22,9 @@ This repository **contains my personal notes, analysis reports, project material
 ```
 Research-Trainings-2025/
 │
+├── README.md                        # Overview, skills acquired, repository description
+├── LICENSE                          # Repository license 
+│
 ├── Genome-Sequencing-Course-2025/
 │   │
 │   ├── README.md                          # Overview of course, Summary, and skills
