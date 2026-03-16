@@ -1,6 +1,6 @@
 # 💻 Research Trainings 2025 Repository
 
-This repository **contains my personal notes, analysis reports, project materials, and summaries** from multiple research and training events in 2025. It highlights **hands-on experience in genomics, bioinformatics pipelines, Nextflow workflows, and computational biology exercises**, developed alongside my M.Sc. in Biochemistry and Molecular Biology.
+This repository **contains my personal notes, analysis reports, project materials, and summaries** from multiple research and training events in 2025. It highlights **hands-on experience in genomics, bioinformatics pipelines, and Nextflow workflows**, developed alongside my M.Sc. in Biochemistry and Molecular Biology.
 
 ---
 
