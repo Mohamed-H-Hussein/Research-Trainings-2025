@@ -139,7 +139,7 @@ These visualizations provide insights into **community structure and biodiversit
 
 ---
 
-## Lecture: Biodiversity Genomics in the ‘-Omics’ Era
+## Session: Biodiversity Genomics in the ‘-Omics’ Era
 
 **Lecturer:** Dr. Abdoallah Sharaf — Senior Bioinformatician, SequAna  
 **Type:** Lecture
