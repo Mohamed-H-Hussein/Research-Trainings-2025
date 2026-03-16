@@ -14,7 +14,7 @@ The sessions also covered the **nf-core ecosystem**, which provides community-cu
 
 ---
 
-## Session 1: Workflow Management with Nextflow
+## Session: Workflow Management with Nextflow
 **Lecturer:** Dr. Abdoallah Sharaf — Senior Bioinformatician, SequAna & Seqera Ambassador  
 **Type:** Lecture & Practical
 
@@ -114,7 +114,7 @@ Based on the **official Seqera Nextflow training material**: [Nextflow Training]
 
 ---
 
-## Session 2: Introduction to nf-core
+## Session: Introduction to nf-core
 **Lecturer:** Dr. Abdoallah Sharaf — Senior Bioinformatician, SequAna  
 **Type:** Lecture & Practical
 
@@ -153,7 +153,7 @@ nf-core is a **community-driven initiative** providing standardized Nextflow pip
 
 ---
 
-## Session 3: Hackathon — Prima Project Activities
+## Session: Hackathon — Prima Project Activities
 **Supervisor:** Prof. Asmaa Abushady – Nile University 
 **Type:** Collaborative Project Work
 
@@ -178,7 +178,7 @@ Activities:
 
 ---
 
-## Session 4: Project Discussions and Best Group Selection
+## Session: Project Discussions and Best Group Selection
 
 * Presented **Prima Project** progress and analytical approaches  
 * Discussed data interpretation strategies and workflow design  
@@ -191,7 +191,7 @@ Activities:
 
 ---
 
-## Session 5: Closing Ceremony
+## Session: Closing Ceremony
 * Recap of the three-day program  
 * Recognition of outstanding hackathon teams  
 * Final remarks from instructors and organizers  
