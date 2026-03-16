@@ -29,7 +29,7 @@ Day 1 introduced participants to marine biodiversity genomics, metagenomics appl
 
 ---
 
-## Lecture 1: Biodiversity Loss in Marine Biology
+## Session: Biodiversity Loss in Marine Biology
 
 **Lecturer:** Prof. Sameh Hassanein — Nile University   
 **Type:** Lecture
@@ -50,7 +50,7 @@ Day 1 introduced participants to marine biodiversity genomics, metagenomics appl
 
 ---
 
-## Lecture 2: Next Generation Technologies — Deep Dive in Marine Biology
+## Session: Next Generation Technologies — Deep Dive in Marine Biology
 
 **Lecturer:** Prof. Sameh Hassanein — Nile University   
 **Type:** Lecture
@@ -70,7 +70,7 @@ Day 1 introduced participants to marine biodiversity genomics, metagenomics appl
 
 ---
 
-## Lecture 3: Applications of Metagenomics in Marine Drug Discovery
+## Session: Applications of Metagenomics in Marine Drug Discovery
 
 **Lecturer:** Prof. Sameh Hassanein — Nile University   
 **Type:** Lecture
