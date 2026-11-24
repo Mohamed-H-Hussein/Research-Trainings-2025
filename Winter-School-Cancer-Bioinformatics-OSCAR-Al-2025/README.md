@@ -151,7 +151,7 @@ M.Sc. Candidate — Biochemistry & Molecular Biology, Ain Shams University, Egyp
 This folder is part of the **Research-Trainings-2025** repository.
 
 **Citation:**
-Hussein, Mohamed H. (2026). *Research-Trainings-2026 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
+Hussein, Mohamed H. (2026). *Research-Trainings-2025 repository [Summary, Notes, and Project]*. GitHub repository: [https://github.com/Mohamed-H-Hussein/Research-Trainings-2025](https://github.com/Mohamed-H-Hussein/Research-Trainings-2025)
 
 ---
 
